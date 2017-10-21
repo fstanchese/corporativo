@@ -1,0 +1,106 @@
+<?php
+
+//set_time_limit(600);
+
+require_once ("../lib/general.php");
+
+/**
+ * Classe App 
+ * Responsável por controlar cada aplicação (página) do sistema. 
+ *		Verificar a versão do navegador.
+ * 		Verificar se o usuário está logado.
+ *		Verificar se possui permissão para acessar a aplicação.
+ */
+class App
+{
+	public $title; //Título da Aplicação
+	public $description; //Descrição da Aplicação
+	public $roles; //Lista de Roles da Aplicação
+
+	/**
+	 * 	Construtor da classe App	
+	 *	@param unknown $title
+	 *	@param unknown $description
+	 *	@param unknown $roles
+	 *	@param unknown $user	 	
+	 */
+	public function __construct($title, $description, $roles, $user)
+	{
+		
+		// Verifica o navegador do usuário. Caso o mesmo não tenha suporte a HTML 5 ou CSS 3,
+		// uma mensagem de 'Navegador Inválido' aparece na tela.
+		$version = intval(trim(substr($_SERVER[HTTP_USER_AGENT], strpos("Mozilla", $_SERVER[HTTP_USER_AGENT]) + 8, 4)));
+		
+		if ($version < 5)
+		{
+			die("Navegador inválido.");
+		}		
+		
+		//Verifica se o usuário está logado, ou seja, se passou pelo Login antes de acessar essa aplicação. 
+		//Caso não esteja logado, é direcionado para a tela de Login.
+		if($user->GetUser() == NULL || $_SESSION[user] == "")
+		{			
+			
+			$path = explode("/",$_SERVER[PHP_SELF]);
+			
+			if($_SERVER[QUERY_STRING] != "")
+			{
+				$pQueryString = "?".$_SERVER[QUERY_STRING];
+				
+			}
+			
+			header("Location:../sys/login.php?p_url=".urlencode($path[count($path)-2]."/".reset(explode(".",$path[count($path)-1])).".php".$pQueryString));
+			
+			return false;
+		}
+			
+		$this->title = $title;
+			
+		$this->description = $description;
+			
+		$this->roles = $roles;					
+			
+		if(!$this->CheckAccess($user->GetRoles()))
+		{
+			header("Location:./busca.php");
+			return false;
+		}			
+			
+	}
+
+	/**
+	 *  Método responsável por verificar o tipo de acesso.	
+	 *  Sendo chamado no construtor da classe para verificar se o usuário possui uma ou mais Roles que a Aplicação possui.	
+	 *	@param array $roles
+	 *	@return boolean	 
+	 */
+	public function CheckAccess($roles)
+	{
+		if(!is_array($roles)) 
+		{
+			return false; //Caso não possua nenhuma role
+		}
+
+		foreach($roles as $role)
+		{
+			if(array_search($role, $this->roles) !== FALSE)
+			{
+				return true; //Caso possua pelo menos uma role
+			}
+		}
+			
+		return false;
+	}	
+	
+	/**
+	 *  Método responsável por retornar as Roles da aplicação.	
+	 *	@return array roles	 
+	 */	
+	function GetRoles()
+	{			
+		return $this->roles;			
+	}
+	
+}
+
+?>

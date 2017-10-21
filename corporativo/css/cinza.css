@@ -1,0 +1,170 @@
+header{
+
+	background: -webkit-gradient(linear, center top, center bottom, from(#cccccc), to(#aaaaaa));
+	background: -moz-linear-gradient(bottom, #cccccc, #aaaaaa 175px);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#aaaaaa');
+	
+}
+
+
+header h1{
+	color:#333;
+}
+
+header h2{
+	color:#333;
+}
+
+
+.unitRadio{
+	
+	color:#333;
+}
+
+legend {color: #444;}
+
+footer{
+		background: -webkit-gradient(linear, center top, center bottom, from(#cccccc), to(#aaaaaa));
+		background: -moz-linear-gradient(bottom, #cccccc, #aaaaaa 175px);
+		color:#333;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#aaaaaa');
+}
+
+
+input[type=submit], input[type=button], input[type=reset],button {
+	background: -webkit-gradient(linear, center top, center bottom, from(#aaaaaa), to(#cccccc));
+	background: -moz-linear-gradient(bottom, #aaaaaa, #cccccc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaaaaa', endColorstr='#cccccc');
+}
+
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover,button:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#cccccc), to(#aaaaaa));
+	background: -moz-linear-gradient(bottom, #cccccc, #aaaaaa);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#aaaaaa');
+}
+
+legend { background: #cccccc; }
+
+
+.dataGrid tr:hover{
+	background:-o-linear-gradient(bottom, #b1d6fa 5%, #bedcfb 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b1d6fa), color-stop(1, #bedcfb) ); 
+	background:-moz-linear-gradient( center top, #b1d6fa 5%, #bedcfb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1d6fa", endColorstr="#bedcfb");	
+	background: -o-linear-gradient(top,#b1d6fa,#bedcfb);
+}
+
+.dataGrid th{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #eeeeee 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #eeeeee) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #eeeeee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#eeeeee");	
+	background: -o-linear-gradient(top,#cccccc,#eeeeee);
+
+}
+
+.dataGrid caption{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #eeeeee 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #aaa) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #aaa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#aaa");	
+	background: -o-linear-gradient(top,#cccccc,aaa);
+}
+
+
+.divPagination a{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #eeeeee 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #eeeeee) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #eeeeee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#eeeeee");	
+	background: -o-linear-gradient(top,#cccccc,#eeeeee);
+	color:#333;
+
+}
+
+
+.paginate_active, .dataTables_paginate a:hover {
+	background:-o-linear-gradient(bottom, #cccccc 5%, #eeeeee 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #eeeeee) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #eeeeee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#eeeeee");	
+	background: -o-linear-gradient(top,#cccccc,#eeeeee);
+	color:#333;
+	
+}
+
+
+section h1{
+color:#cccccc;
+}
+
+
+#easyTooltip{
+
+	border:1px solid #cccccc;
+	background:-o-linear-gradient(bottom, #cccccc 5%, #aaaaaa 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #aaaaaa) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #aaaaaa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#aaaaaa");	
+	background: -o-linear-gradient(top,#cccccc,#aaaaaa);
+	color:#aaa;
+}
+
+
+
+#nav a{
+	color:#444;
+}
+
+#nav a:hover{
+	color:#222;
+}
+
+
+#nav, #nav ul{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #aaa 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #aaa) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #aaa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#aaa");	background: -o-linear-gradient(top,#cccccc,aaa);
+	color:#aaa;
+}
+
+#nav{
+	
+	background:-o-linear-gradient(bottom, #cccccc 5%, #aaa 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #aaa) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #aaa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#aaa");	background: -o-linear-gradient(top,#cccccc,aaa);
+	color:#aaa;
+	
+}
+
+
+.menuPage ul 
+{
+	background:-o-linear-gradient(bottom, #384894 5%, #4d61bc 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #384894), color-stop(1, #4d61bc) );
+	background:-moz-linear-gradient( center top, #384894 5%, #4d61bc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#384894", endColorstr="#4d61bc");	background: -o-linear-gradient(top,#384894,4d61bc);
+}
+
+.menuPage ul li a{
+	color:black;
+}
+
+#nav li:hover{
+	
+	background:#aaa;
+	
+}
+
+#logo{
+	background-image:url(../images/logo_azul.png)
+}
+
+
+input[type=submit], input[type=button], input[type=reset] {	color:#333;}
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover {color:#222;}
+.dataGrid th{color:#333;}
+.dataGrid caption{color:#333;}
+
+
+.textSize{ color:#777 }
+

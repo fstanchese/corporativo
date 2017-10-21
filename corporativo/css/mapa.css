@@ -1,0 +1,70 @@
+
+ul { list-style:none }
+
+
+.mapa {
+	
+	float:left;
+	width:19%;
+	margin:0 0.3%;
+	text-align:center
+}
+.mapa:first-child
+{
+	
+	margin:0 0.3% 0 0;
+}
+
+.mapa div {
+	
+	background-color:#20344C;
+	color: #FFF;
+	font-size: 15px;
+	width:100%;
+	padding:5px 0
+ }
+
+.mapasub {
+
+	cursor: pointer;
+	width: 99%;
+	border: 0px;
+	text-align:left;
+	
+	
+	padding:5px 0 5px 1%;
+}
+
+.mapasub:first-child
+{
+	
+	margin:0;
+}
+
+.mapasub div 
+{
+	color: #ffffff!important;
+	background-color: #1f4572!important;
+	font-size:12px!important;
+	padding:5px 0 5px 1%;
+	width:99%
+		
+}
+
+.mapaguiul
+{
+	
+	display:none
+}
+
+.mapagui {
+	
+	background:white;	
+	border: 0px;
+	width: 98%;
+	color:black;
+	padding:2px 0 2px 2%;
+	font-size:11px;
+	cursor:default;
+	
+}

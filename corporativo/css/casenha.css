@@ -1,0 +1,43 @@
+.senhaContainer{width:310px;height:auto;font-family:arial;font-size:13px;padding:10px;}
+.infosAluno { font-size:15px;text-align:center;line-height:30px}
+.infosSituacao { font-size:13px;text-align:center;line-height:18px}
+.senhaInfo { font-size:26px;text-align:center;line-height:30px}
+.via2 { font-size:10px;text-align:center}
+.nomeEvento { font-size:22px;text-align:center;margin:0 0 5px 0}
+.codigoBarra { margin:5px auto }
+
+.listMesa { width:90%;list-style:none}
+.listMesa li { background:white;width:45px;height:45px;border:1px solid #464646;line-height:45px;text-align:center;margin:5px;font-size:24px;cursor:pointer}
+.listMesaOn { color:#025702;border:1px solid #025702!important;background:#c5f5c5!important}
+.listMesaOff { color:red;border:1px solid red!important;background:#FFDFDF!important}
+
+.listMesaSit { width:100%;list-style:none}
+.listMesaSit li { background:white;width:120px;height:110px;border:1px solid #464646;text-align:left;margin:3px;font-size:24px;cursor:pointer; float: left}
+.listMesaSitN { color:#025702;border:1px solid red!important;background:#ffdfdf!important}
+
+.pickSenha { cursor:pointer}
+
+.tbMonitor { font-size:150px;font-family:tahoma;width:100%}
+.tbMonitor th { width:50%}
+
+.tbMonitor tr td { text-align:center;font-weight:bold;font-size:170px}
+
+.tbMonitor tr td:first-child
+{
+	color:blue;
+}
+
+.firstLine td:first-child
+{
+	
+	color:red!important
+	
+}
+
+
+.firstLine td
+{
+	
+	color:#5b000d!important
+	
+}

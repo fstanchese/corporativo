@@ -1,0 +1,45 @@
+
+/** HEADER **/
+ 
+.headerPortal{
+	height: 35px!important;
+	line-height:35px!important;
+	background: -webkit-gradient(linear, center top, center bottom, from(#30445c), to(#30445c))!important;
+	background: -moz-linear-gradient(bottom, #30445c, #30445c 175px)!important;
+	text-align:center!important;
+	
+	
+}
+.headerPortal h1{
+	color:#fff!important;
+	font-size:15px!important;
+	text-shadow: 1px 1px #000, -1px -1px #000!important;
+	margin-bottom:5px!important;
+	margin-top:0px!important;
+	
+}
+
+
+/** FIM HEADER **/
+
+/** FOOTER **/
+
+.footerPortal { 
+	
+		color:white!important; 
+		text-align:center!important; width:100%!important; height:20px!important;font-size:10px!important;
+		padding-top:5px;
+		background: -webkit-gradient(linear, center top, center bottom, from(#30445c), to(#30445c))!important;
+		position:fixed!important;bottom:0!important;
+		background: -moz-linear-gradient(bottom, #30445c, #30445c 175px)!important;
+}
+
+/** FIM FOOTER **/
+
+
+.conteudo{
+	min-height:420px;
+	max-height:420px;
+	overflow:auto;
+	padding:15px;
+}

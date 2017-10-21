@@ -1,0 +1,95 @@
+html, body {
+  overflow-y:hidden;
+  height:100%;
+}
+
+
+h1 {  }
+
+.nav { float:left;width:25%;background:#27384C;height:1000px;border-right:4px solid #008000;padding-top:40px;}
+section { padding:0!important}
+
+.infoAluno
+{
+	width:90%;
+	margin:0 auto;
+	background:#677B93;
+	height:280px;
+	padding:3px;
+	font-size:14px;
+	border-radius:5px;		
+		
+}
+
+.infoAluno img
+{
+	width:90px;
+	border:3px solid white;
+	margin-left:35%;
+}
+
+.infoAluno .dados
+{
+	
+	color:white;
+	line-height:23px;
+
+}
+
+.docsPendentes
+{
+	
+	width:90%;
+	margin:0 auto;
+	background:#d0d0d0;
+	height:180px;
+	padding:3px;
+	border-radius:5px;
+	
+}
+
+.menuArea
+{
+	
+	float:left;
+	padding:25px;
+	width:70%;
+}
+
+
+.btnSair
+{
+	
+	width:90%;
+	margin:0 auto;
+	height:50px!important;
+	line-height:35px;
+	text-transform:uppercase;
+	text-align:left;
+	font-size:25px;
+	cursor:pointer;
+	margin-top:30px;
+	background:#d0d0d0;
+	color:black;
+	float:right!important;
+	margin-right:40px!important;
+	border-radius:5px;
+	
+	
+}
+
+
+.docsPendentes h3 { text-align:center;color:#a80c1e}
+
+
+.boxItem { cursor:pointer;float:left;height:100px;width:46%;margin:1%;padding-top:10px;padding-left:15px;font-size:27px;border-radius:5px;}
+
+.txtDesc {font-size: 15px; text-align: center}
+
+.boxItem:hover { opacity:0.85; -webkit-transition: opacity 1s ease-in-out;
+  				-moz-transition: opacity 0.2s ease-in-out;
+  				-ms-transition: opacity 0.2s ease-in-out;
+  				-o-transition: opacity 0.2s ease-in-out;
+  				transition: opacity 0.2s ease-in-out;
+  }
+			

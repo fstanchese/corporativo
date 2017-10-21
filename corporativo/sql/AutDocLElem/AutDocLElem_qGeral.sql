@@ -1,0 +1,4 @@
+select
+	AutDocLayoutElem.*
+from
+	AutDocLayoutElem

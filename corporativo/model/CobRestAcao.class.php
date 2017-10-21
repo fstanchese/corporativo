@@ -1,0 +1,51 @@
+<?php 
+         
+    require_once ("../engine/Model.class.php"); 
+         
+    class CobRestAcao extends Model 
+    { 
+         
+        //Mapeamento da tabela do Banco de Dados 
+        public $table = 'CobRestAcao'; 
+
+         
+        public $attribute     = array(); 
+        public $calculate     = array(); 
+        public $query        = array();
+         
+
+        public $rows; 
+
+                 
+        public function __construct($db) 
+        {
+
+            $this->db = $db;
+
+            $this->rows = 30;
+
+
+            $this->attribute['Nome']['Type'] 	= 'varchar2';
+            $this->attribute['Nome']['Length']	= 30;
+            $this->attribute['Nome']['NN'] 		= 1;
+            $this->attribute['Nome']['Label'] 	= 'Ação da Restrição de Cobrança';
+
+            //Calculates para a criação de querys no diretório SQL
+
+
+            //Recognizes
+            $this->recognize['Recognize'] = 'Nome';
+
+            //Índices
+            $this->index['Nome']['Cols'] 	= "Nome";
+            $this->index["Nome"]["Unique"] 	= 1;
+
+
+            //Todas as Queries da classe
+            $this->query['qGeral'] 	= 'CobRestAcao_qGeral';
+            $this->query['qId'] 	= 'CobRestAcao_qId';
+                 
+        } 
+} 
+
+?>

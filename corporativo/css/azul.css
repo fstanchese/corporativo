@@ -1,0 +1,182 @@
+
+/** HEADER **/
+ 
+header{
+	
+	background: #30445c
+	
+	
+	
+}
+header h1{
+	color:#fff;
+	font-size:15px;
+	text-shadow: 1px 1px #000, -1px -1px #000;
+	margin-bottom:5px;
+	margin-top:0px;
+	
+}
+
+
+/** FIM HEADER **/
+
+/** FOOTER **/
+
+footer { 
+	
+		color:white; 
+		text-align:center; width:100%; 
+		height:40px;
+		font-size:10px;
+		padding-top:5px;
+		background:#30445c;
+		position:fixed;
+		bottom:0;
+		border-top:4px solid #008000;
+
+}
+
+/** FIM FOOTER **/
+
+
+.conteudo{
+	min-height:420px;
+	max-height:420px;
+	overflow:auto;
+	padding:15px;
+}
+
+
+.unitRadio{
+	
+	color:#fff;
+}
+
+legend {color: white;}
+
+
+
+input[type=submit], input[type=button], input[type=reset],button {
+	background: #435e7f;
+	
+}
+
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover,button:hover {
+	background:#435e7f;
+}
+
+_input { background:blue; }
+
+legend { background-color: #435e7f;  } 
+
+
+
+
+
+.dataGrid th{
+	background:#4c6b91
+	
+	
+
+}
+
+.dataGrid caption{
+	background:#4c6b91 	
+	
+}
+
+.divPagination a{
+	background:#4c6b91;
+	
+	color:white;
+
+}
+
+
+
+.paginate_active, .dataTables_paginate a:hover { 
+	background:#435e7f;
+	
+}
+
+
+
+#easyTooltip{
+
+	border:1px solid #435e7f;
+	background:#4c6b91;
+	color:#fff;
+}
+
+
+
+#nav, #nav ul{
+	background:#4c6b91;
+	color:white;
+}
+
+#nav{
+	
+background:#4c6b91;
+	color:white;
+	
+}
+
+#nav a{
+	color:#fff;
+}
+
+#nav a:hover{
+	color:#ddd;
+}
+
+
+.menuPage ul 
+{
+	background:#4c6b91;
+}
+
+.menuPage ul li a{
+	color:white;
+}
+
+
+#nav li:hover{
+	
+	background:#4c6b91;
+	
+}
+
+#logo {
+	background-image:url(../images/logo.png);
+}
+
+
+
+input[type=submit], input[type=button], input[type=reset] {
+	color:#fff;
+}
+
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover {
+	color:#fff;
+}
+
+
+.dataGrid th{
+	color:#fff;
+}
+
+.dataGrid caption{
+	color:#fff;
+}
+
+.textSize{ color:white }
+
+
+.bgGeneral{
+	background:#435e7f;
+	color:#fff;
+}
+
+
+

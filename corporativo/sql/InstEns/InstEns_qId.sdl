@@ -1,0 +1,11 @@
+select
+  Id,
+  Codigo,
+  Nome,
+  CodVal,
+  InstEns_gsRecognize(Id) as Recognize,
+  Pais_gsRecognize(Pais_Id) as Pais_Id_r
+from
+  InstEns
+where
+  Id = nvl( p_InstEns_Id ,0)

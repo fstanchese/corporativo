@@ -1,0 +1,10 @@
+
+select
+  Id,
+  Codigo,
+  Nome,
+  InstEns_gsRecognize(Id) as Recognize
+from
+  InstEns
+order by
+  Nome

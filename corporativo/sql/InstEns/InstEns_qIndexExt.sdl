@@ -1,0 +1,11 @@
+select 
+  Id,
+  Codigo,
+  Nome,
+  InstEns_gsRecognize(Id) as Recognize 
+from 
+  InstEns
+where
+  upper(Nome) like '%'||replace(upper( p_O_Search ),' ','%')||'%'
+and
+  trim( p_O_Search ) is not null

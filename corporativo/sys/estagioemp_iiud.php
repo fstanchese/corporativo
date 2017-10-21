@@ -1,0 +1,99 @@
+<?php
+include("../engine/User.class.php");
+include("../engine/App.class.php");
+
+$user = new User ();
+$app = new App("Cadastro de Empresas Conveniadas com Estágios USJT","Cadastro de Empresas Conveniadas com Estágios USJT",array('ADM','SECRETARIAESTAGIOS'),$user);
+
+include("../engine/Db.class.php");
+include("../engine/Navigation.class.php");
+include("../engine/DataGrid.class.php");
+include("../engine/ViewPage.class.php");
+include("../engine/Form.class.php");
+
+include("../model/EstagioEmp.class.php");
+
+//Conectar o usuário ao Banco de Dados
+$dbOracle = new Db ($user);
+
+//Instanciar a DbData
+$dbData = new DbData ($dbOracle);
+
+//Instanciar a classe que irá utilizar
+$estagioemp = new EstagioEmp($dbOracle);
+
+//se o p_O_Option for  == select - então 1 linha foi selecionada
+if($_POST[p_O_Option] == "select")
+{
+	$dbData->Get($EstagioEmp->Query("qGeral",array("p_EstagioEmp_Id"=>$_POST[p_EstagioEmp_Id])));
+	$linhaSelected = $dbData->Row();
+}
+	
+//Quando cria o objeto View é necessário passar o Titulo da Página
+$view = new ViewPage($app->title,$app->description);
+$view->Explain ("IUD");
+	
+//Chama a IUD
+$EstagioEmp->IUD($_POST);
+
+//Para montar o Header precisa passar o nome do Usuário e os Departamentos dele
+//Opcional $nav
+$view->Header($user,$nav);
+
+//Instanciar formulário
+$form = new Form();
+
+	$form->Fieldset();
+	
+		$form->Input('','hidden',array("name"=>'p_EstagioEmp_Id',"value"=>$linhaSelected[ID]));
+		$form->Input("Razão Social",'text',array("class"=>"size100",'name'=>'p_Razao','value'=>$linhaSelected[RAZAO]));
+		$form->Input("Nome Fantasia",'text',array("class"=>"size50",'name'=>'p_Fantasia','value'=>$linhaSelected[FANTASIA]));
+		$form->Input("CNPJ",'text',array("class"=>"size14",'name'=>'p_CNPJ','value'=>$linhaSelected[CNPJ]));
+		$form->Input("Inscrição Estadual",'text',array("class"=>"size8",'name'=>'p_IE','value'=>$linhaSelected[IE]));
+
+	$form->CloseFieldset ();
+
+	$form->Fieldset();
+		// Botões de ação
+		$form->IUDButtons();
+	$form->CloseFieldset ();
+
+//fecha formulário
+unset($form);
+
+//Consultas deverão ser feitas somente se p_O_Option == 'search'
+if($_GET["p_O_Option"] == "search")
+{
+
+	//Chamando o método Query passando o arquivo .sql para a realizar a consulta.
+	$dbData->Get($EstagioEmp->Query('qGeral'));
+
+	//Se a consulta possuir resultados
+	if($dbData->Count() > 0)
+	{
+
+		//Instancia o DataGrid passando as colunas
+		$grid = new DataGrid(array("Nome","Editar","Excluir"));
+
+		//Obtêm as linhas da execução do arquivo .sql
+		while($row = $dbData->RowLimit($_GET[page]))
+		{
+			$grid->Content($row[RECOGNIZE],array('align'=>'left'));
+			$grid->Content($view->Edit($EstagioEmp,$row[ID]));
+			$grid->Content($view->Delete($EstagioEmp,$row[ID]));
+		}
+	}
+
+	//fecha grid
+	unset($grid);
+
+	$dbData->Pagination();
+
+}
+
+unset($EstagioEmp);
+unset($dbData);
+unset($dbOracle);
+unset($user);
+
+?>

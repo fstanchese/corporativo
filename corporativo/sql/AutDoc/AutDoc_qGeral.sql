@@ -1,0 +1,4 @@
+select
+	AutDoc.*
+from
+	AutDoc

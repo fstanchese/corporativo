@@ -1,0 +1,14 @@
+select
+  Id,
+  Codigo,
+  Codval,
+  Nome,
+  InstEns_gsRecognize(Id) as Recognize
+from
+  InstEns
+where
+  p_InstEns_Codigo is not null
+and
+  nome like p_InstEns_Codigo ||'%'
+order by
+  nome

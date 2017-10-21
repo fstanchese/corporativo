@@ -1,0 +1,1 @@
+select * from devices where ipaddr like p_ipaddr

@@ -1,0 +1,141 @@
+
+/** HEADER **/
+ 
+header{
+	width: 100%;
+	height: 90px;
+	border-bottom:1px solid #222	
+}
+
+#logo{
+	float: left;
+	margin:5px 15px;
+	width:235px;
+	height:80px;
+	background-size: auto 100%;
+	background-repeat:no-repeat
+}
+
+.headerOptions{
+	float: left;
+	padding:10px;
+	width: 25%;
+	margin-top:5px;
+    
+}
+
+.unitRadio{
+	
+	margin-right:8px;
+
+}
+
+
+header h1{
+	font-size:110%;
+	float:right;
+	text-align:right;
+	margin-bottom:10px;
+	margin-right:10px;
+	margin-top:20px;
+	
+}
+
+header h2{
+	font-size:110%;
+	margin-bottom:5px;
+	color:white;
+}
+
+
+header h3{
+	font-size:100%;
+	
+}
+
+
+
+/** FIM HEADER **/
+
+/** FOOTER **/
+
+footer { 
+	
+	text-align:center; width:100%; height:40px;font-size:10px; position:fixed; bottom:0;z-index:999;
+
+}
+
+/** FIM FOOTER **/
+
+.corTema{
+	clear:both;
+	float:right;
+	margin-top:-45px;
+	margin-right:10px
+}
+
+.corTema select {
+	padding:0;
+	
+}
+
+
+.menuPage{
+	float:left;
+	margin-right:10px;
+	
+}
+
+.menuPage ul {
+	list-style:none;
+	z-index:999;
+	position:absolute;
+	display:none;
+	margin-top:3px
+	
+}
+
+.menuPage ul li{
+	margin: 8px 20px;
+}
+
+.menuPage ul li a {
+	text-decoration:none;
+}
+
+.menuPage ul li a:hover {
+	text-decoration:underline;
+}
+
+.menuPage span 
+{
+	cursor:pointer;
+	color:white;
+	
+}
+
+
+
+.headerOptions h2 img{
+	
+	cursor:pointer;
+	margin-left:7px
+}
+
+.headerOptions select {
+	padding:2px;
+	font-size:80%;
+	margin-bottom:2px
+}
+
+
+
+
+
+
+
+
+
+
+
+
